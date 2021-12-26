@@ -1,2 +1,19 @@
-<h1>Miguel Bordés Collantes</h1>
-<p>ehhhhhh ohhhhhhhh</p>
+<div [ngClass]="[btnStyle]" id="mySidenav" class="sidenav">
+    <a class="close" (click)="submit()"><i class="fas fa-times"></i></a>
+    <a routerLink="/" (click)="submit()">Inicio</a>
+    <a routerLink="/ilustraciones" (click)="submit()">Ilustraciones</a>
+    <!-- <a routerLink="/proyectos" (click)="submit()">Proyectos</a>
+    <a routerLink="/contacto" (click)="submit()">Contacto</a> -->
+</div>
+
+<div class="menu">
+    <a class="menu-icon" (click)="submit()"><i class="fas fa-bars"></i></a>
+    <a routerLink="/">Inicio</a>
+    <a routerLink="/ilustraciones">Ilustraciones</a>
+    <div class="logo"></div>
+    <!-- <a routerLink="/proyectos">Proyectos</a>
+    <a routerLink="/contacto">Contacto</a> -->
+</div>
+<router-outlet></router-outlet>
+
+

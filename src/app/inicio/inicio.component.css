@@ -1,0 +1,142 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.inicio{
+    width: 800px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.presentation , .description{
+    /* margin-top: 10vh; */
+    /* height: 100%; */
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation .img-profile{
+    /* height: 100%;   */
+}
+
+.presentation .img-profile img{
+    height: 420px;    
+}
+
+.presentation h2{
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.description div h4{
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.description .texto{
+    text-align: justify;
+    background-color: black;
+    padding: 2rem;
+}
+
+.description .redes_sociales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description i{
+    font-size: 2rem;
+    margin: 1rem;
+    color: white;
+    
+}
+
+.description a i{
+    cursor: pointer;
+}
+
+.description a i:hover{
+    transition: 0.3s;
+    color: rgb(196, 196, 196);
+    position: relative;
+    top: -5px
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 840px) {
+    .presentation h2{
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    section{
+        height: 100%;
+    }
+    .inicio{
+        flex-direction: column;
+        height: 100%;
+    }
+    .presentation{
+        flex-direction: column-reverse; 
+    }
+    .img-profile{
+        display: flex;
+        justify-content: center;
+        margin: 2rem; 
+    }
+    .description{
+        flex-direction: initial;
+        justify-content: center;
+    }
+    .description .texto{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .presentation h2{
+        font-size: 2.5rem;
+    }
+       
+}
+
+@media screen and (max-width: 420px) {
+    .description .texto{
+        width: 100%;
+    }
+
+    .presentation .img-profile img{
+        height: 375px;    
+    }
+     
+}

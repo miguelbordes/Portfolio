@@ -1,0 +1,239 @@
+.padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.hijo{
+    margin: 1rem;
+    min-height: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    background-color: white;
+    /* box-shadow: 0px 0px 5px 1px black; */
+    box-shadow: 0px 10px 10px black;
+}
+
+.hijo .nieto{
+    height: 100%;
+    /* display:none; */
+    color: var(--color-blanco);
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    font-size: 0.7rem;
+    word-wrap: break-word;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo .nieto p{
+    color: white;
+    margin: 2rem;  
+}
+
+.hijo:hover .nieto{
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+}
+
+#ozuka{
+    background-image: url("../../assets/imagenes/ozuka-amarillo.PNG");
+    background-position: center;
+    background-size: cover;
+
+}
+
+#alien{
+    background-image: url("../../assets/imagenes/alien.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#cabezas{
+    background-image: url("../../assets/imagenes/hhhhhhhhh.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#darth1{
+    background-image: url("../../assets/imagenes/darth1.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#darth2{
+    background-image: url("../../assets/imagenes/titulo-2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#hasbullah{
+    background-image: url("../../assets/imagenes/asd.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#oj-vinetas{
+    background-image: url("../../assets/imagenes/oj-vinetas.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#oj{
+    background-image: url("../../assets/imagenes/oj.jpeg");
+    background-position: center;
+}
+
+/* #ozuka-amarillo{
+    background-image: url("../../assets/imagenes/ozuka-amarillo.jpeg");
+    background-position: center;
+} */
+
+#ozuka-gris{
+    background-image: url("../../assets/imagenes/ozuka-gris.jpeg");
+    background-position: center;
+}
+
+/* #ozuka-ojo{
+    background-image: url("../../assets/imagenes/ozuka-ojo.jpeg");
+    background-position: center;
+}
+#ozuka-rojo{
+    background-image: url("../../assets/imagenes/ozuka-rojo.jpeg");
+    background-position: center;
+} */
+#pescaos{
+    background-image: url("../../assets/imagenes/pescaos.jpeg");
+    background-position: center;
+}
+#punk-cuaderno{
+    background-image: url("../../assets/imagenes/punk-cuaderno.jpeg");
+    background-position: center;
+}
+/* #punk-digital{
+    background-image: url("../../assets/imagenes/punk-digital.jpeg");
+    background-position: center;
+}
+#punk{
+    background-image: url("../../assets/imagenes/punk.jpeg");
+    background-position: center;
+} */
+#rana{
+    background-image: url("../../assets/imagenes/rana.jpeg");
+    background-position: center;
+}
+#recuerdos{
+    background-image: url("../../assets/imagenes/recuerdos.jpeg");
+    background-position: center;
+}
+
+#Oj_web{
+    background-image: url("../../assets/imagenes/Oj_web.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#peces{
+    background-image: url("../../assets/imagenes/peces_zacky_web.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#infierno{
+    background-image: url("../../assets/imagenes/ruta_por_el_infierno_web.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#croac{
+    background-image: url("../../assets/imagenes/croac.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#chicaHell{
+    background-image: url("../../assets/imagenes/chica_hell.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#chicaHell2{
+    background-image: url("../../assets/imagenes/chica_hell2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#cabezasAzul{
+    background-image: url("../../assets/imagenes/cabezas2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#pervertido{
+    background-image: url("../../assets/imagenes/pervertido.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#hateme{
+    background-image: url("../../assets/imagenes/hateme.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#kissass{
+    background-image: url("../../assets/imagenes/kissass.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#hasbullah2{
+    background-image: url("../../assets/imagenes/hasbullah.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#bucle{
+    background-image: url("../../assets/imagenes/bucle.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#gluglu{
+    background-image: url("../../assets/imagenes/glugluglu.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#cresta{
+    background-image: url("../../assets/imagenes/cresta.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 430px) {
+    .hijo{
+
+        min-width: 350px;
+        max-width: 350px;
+        min-height: 350px;
+        max-height: 350px;
+    }
+           
+}
+
+@media screen and (max-width: 375px) {
+    .hijo{
+
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 300px;
+        max-height: 300px;
+    }
+           
+}
